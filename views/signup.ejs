@@ -1,0 +1,50 @@
+<div class="form-label-group">
+    <div class="form-label-group">
+        <input type="text" id="inputName" class="form-control" name="name" placeholder="Name"
+            value="<%= typeof name != 'undefined' ? name : '' %>" required autofocus autocomplete="name">
+        <label for="inputName">Name</label>
+    </div>
+</div>
+
+<div class="form-label-group">
+    <div class="form-label-group">
+        <input type="text" id="inputSurname" class="form-control" name="surname" placeholder="Surname"
+            value="<%= typeof surname != 'undefined' ? surname : '' %>" required autofocus autocomplete="family-name">
+        <label for="inputSurname">Surname</label>
+    </div>
+</div>
+
+<div class="form-label-group">
+    <div class="form-label-group">
+        <input type="text" id="username" class="form-control" name="username" placeholder="Username"
+            value="<%= typeof username != 'undefined' ? username : '' %>" required autofocus>
+        <label for="username">Username</label>
+    </div>
+</div>
+
+<div class="form-label-group">
+    <div class="form-label-group green-border-focus">
+        <textarea class="form-control" id="description" name="description" rows="3" placeholder="Tell us about yourself"
+            autocapitalize="sentences"><%= typeof description != 'undefined' ? description : '' %></textarea>
+        <label for="description">Tell us about yourself</label>
+    </div>
+</div>
+
+<div class="form-label-group">
+    <div class="form-label-group">
+        <input type="password" id="inputPassword" class="form-control" name="password" placeholder="Password"
+            value="<%= typeof username != 'undefined' ? password : '' %>" required autofocus>
+        <label for="inputPassword">Password</label>
+    </div>
+</div>
+<div class="form-label-group">
+    <div class="form-label-group">
+        <input type="password" id="inputConfirmPassword" class="form-control" name="confirm_password"
+            placeholder="Confirm Password" value="<%= typeof username != 'undefined' ? confirm_password : '' %>"
+            required autofocus>
+        <label for="inputConfirmPassword">Confirm Password</label>
+    </div>
+</div>
+
+<button id="submit" class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
+<p class="lead mt-4"> Already have an account? <a href="/user/signin">Sign in</a></p>
